@@ -1,4 +1,4 @@
-# gd_data_task
+# GC_Data_Task
 # Problem Statement: 
 
 Concrete’s safety and durability is majorly determined by its compressive strength. The strength of concrete also depends on its mixture composition and curing time. The goal of this project is to develop a regression model using exploratory data analysis and ensemble learning techniques (AdaBoost.R2), that predicts the compressive strength of concrete (in MPa) based on its material composition, age and evaluate model performance using R² score, and compare a from-scratch implementation with scikit-learn’s implementation. The dataset consists of 1030 samples containing quantities of cement, slag, fly ash, water, superplasticizer, coarse aggregate, fine aggregate, and curing age.
@@ -97,7 +97,7 @@ The dataset contains quantities of cement, slag, fly ash, water, superplasticize
 - Higher cement → stronger concrete
 
 
--
+
 - Higher water → weaker concrete (dilution effect)
 
 
@@ -160,19 +160,19 @@ Instead of building one strong model, adaboost works on the principle of buildin
 
 - Since this is a regression problem, clustering metrics like WCSS or Inertia are not applicable. Instead, the following regression metrics were used:
 
-1. R² Score
+## 1. R² Score
 
 - R² measures how well the model explains the variation in compressive strength.
 
 - Higher R² means better performance.
 
-2. Mean Squared Error (MSE)
+## 2. Mean Squared Error (MSE)
 
 - It measures the average squared difference between actual and predicted strength values.
 
 - Lower MSE indicates better accuracy.
 
-3. Mean Absolute Error (MAE)
+## 3. Mean Absolute Error (MAE)
 
 - It measures the average absolute difference between actual and predicted values.
 
@@ -248,6 +248,9 @@ Instead of building one strong model, adaboost works on the principle of buildin
 - Run all the cells from top to bottom.
 
 # Project Structure: 
-- ├── Concrete_data.xls        # Dataset used in the project
+
+├── Concrete_data.xls        # Dataset used in the project
+
 ├── gc.ipynb      # Jupyter Notebook with full code
+
 ├── README.md          # Project explanation
